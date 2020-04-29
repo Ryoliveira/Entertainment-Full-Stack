@@ -1,0 +1,35 @@
+<div id="app">
+  <div class="page-wrapper">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <a routerLink="/media">
+        <i class="fas fa-film fa-4x pl-3 pt-1"></i>
+      </a>
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <!-- Search bar will go here -->
+            <app-search></app-search>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!--Main Content -->
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- End Main Content-->
+  <!--Footer-->
+  <footer>
+    <ul>
+      <li><a href="https://github.com/Ryoliveira" target="_blank"><i class="fab fa-github fa-2x">Github</i></a></li>
+      <li><a href="http://www.omdbapi.com/" target="_blank"><i class="fas fa-ticket-alt fa-2x"> OMDb API</i></a></li>
+      <li><a href="https://www.imdb.com/" target="_blank"><i class="fab fa-imdb fa-2x"></i></a></li>
+    </ul>
+  </footer>
+</div>

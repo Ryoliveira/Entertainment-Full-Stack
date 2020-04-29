@@ -1,0 +1,57 @@
+<div class="media-details-content">
+
+    <div class="media-details-poster">
+        <img src="{{ media.poster }}" onerror="this.src='./assets/images/noPoster.jpg'" />
+    </div>
+    <div class="media-details-title">
+        <h1>{{ media.title }}</h1>
+    </div>
+
+    <div class="row">
+        <p class="media-details-plot">{{ media.plot }}</p>
+    </div>
+    <div class="row">
+        <p class="media-details-category">Writers:</p>
+        <p class="media-details-category-value">{{ media.writer }}</p>
+    </div>
+    <div class="row">
+        <p class="media-details-category">Actors:</p>
+        <p class="media-details-category-value">{{ media.actors }}</p>
+    </div>
+    <div *ngIf="media.type == 'series'" class="row">
+        <p class="media-details-category">Total Seasons:</p>
+        <p class="media-details-category-value">{{ media.totalSeasons }}</p>
+    </div>
+    <div *ngIf="media.type == 'episode'" class="row">
+        <p class="media-details-category">Season:</p>
+        <p class="media-details-category-value">{{ media.season }}</p>
+    </div>
+    <div class="row">
+        <p class="media-details-category">Rated:</p>
+        <p class="media-details-category-value">{{ media.rated }}</p>
+        <p class="media-details-category">Released:</p>
+        <p class="media-details-category-value">{{ media.released }}</p>
+        <p class="media-details-category">Runtime:</p>
+        <p class="media-details-category-value">{{ media.runtime }}</p>
+        <p class="media-details-category">Language:</p>
+        <p class="media-details-category-value">{{ media.language }}</p>
+    </div>
+    <div class="row">
+        <p class="media-details-category">Genre:</p>
+        <p class="media-details-category-value">{{ media.genre }}</p>
+    </div>
+    <div class="row">
+        <p *ngIf="media.type != 'series' && media.type != 'episode'" class="media-details-category">Production:</p>
+        <p class="media-details-category-value">{{ media.production }}</p>
+        <p class="media-details-category">Awards:</p>
+        <p class="media-details-category-value"> {{ media.awards }}</p>
+    </div>
+
+
+
+
+
+
+
+
+</div>

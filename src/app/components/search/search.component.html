@@ -1,0 +1,14 @@
+<div class="form-header">
+    <input #myInput type="text"
+           placeholder="Search Database"
+           class="au-input au-input-xl"
+           (keyup.enter) = "doSearch(myInput.value)"
+             />
+    <button (click)="doSearch(myInput.value)" class="au-btn">
+       <i>Search</i>
+    </button>
+
+    <button (click)=displayGenres() class="genre-btn">
+       <i>List Genres</i>
+    </button>
+</div>
